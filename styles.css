@@ -1,0 +1,166 @@
+html {
+  background-color: rgb(255, 255, 255);
+}
+
+.bg {
+  position: fixed;
+  top: calc(50% - 10px);
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  background: url(bg-1.jpg) no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.bg::before {
+  content: "";
+  position: absolute;
+  bottom: 0; /* Position at the bottom */
+  left: 0; /* Position at the left */
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  background: url(bungabawahkiri.png) no-repeat center center; /* Use your left flower image */
+  background-size: contain; /* Adjust size */
+  opacity: 0; /* Start with the image invisible */
+  animation: fadeIn 2s forwards; /* Apply the fade-in animation */
+}
+
+.bg::after {
+  content: "";
+  position: absolute;
+  top: 0; /* Position at the top */
+  right: 0; /* Position at the right */
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  background: url(bunga.png) no-repeat center center; /* Use your right flower image */
+  background-size: contain; /* Adjust size */
+  opacity: 0; /* Start with the image invisible */
+  animation: fadeIn 2s forwards; /* Apply the fade-in animation */
+}
+
+
+.left-image {
+  position: absolute; /* Position it absolutely within the .button-container */
+  left: 0px; /* Adjust as needed for spacing from the left */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for perfect centering */
+  width: 100px; /* Set width as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 1; /* Ensure it's above the background */
+}
+
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* End state is fully visible */
+  }
+}
+
+@keyframes popup {
+  to {
+    opacity: 1; /* End state is fully visible */
+    transform: translateY(0); /* Move to original position */
+  }
+}
+
+.button-container {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Align items in a column */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 100vh; /* Full height of the viewport */
+}
+
+.title {
+  font-family: "Tangerine", cursive;
+  font-size: 50px; /* Adjust the font size as needed */
+  text-align: center; /* Center the text */
+  margin-bottom: 200px; /* Space between title and button */
+  color: #000; /* Change text color if needed */
+  opacity: 0; /* Start with the text invisible */
+  transform: translateY(-100px); /* Start slightly above */
+  animation: popup 2s forwards; /* Apply the animation */
+  margin-left: -20px; /* Add a small left margin */
+
+}
+
+.button1 {
+  border-radius: 20px;
+  width: 100px;
+  height: 50px;
+  font-family: "Roboto Condensed", sans-serif;
+  transform: translateY(100px); /* StaQrt slightly above */
+  animation: popup 2s forwards; /* Apply the animation */
+  font-size: 13px;
+  margin-left: -10px; /* Add a small left margin */
+}
+
+
+
+
+
+
+
+
+
+
+/* Meddia screen */
+
+
+@media screen and (max-width: 1920px) {
+  .bg {
+    width: 30%; /* Make background full width */
+    height: auto; /* Height will adjust automatically */
+  }
+  .title {
+    font-size: 50px; /* Adjust font size for larger screens */
+    margin-bottom: 100px; /* Adjust margin for larger screens */
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .bg {
+    width: 90%; /* Make background full width */
+    height: auto; /* Height will adjust automatically */
+  }
+  .title {
+    font-size: 50px; /* Adjust font size for larger screens */
+    margin-bottom: 100px; /* Adjust margin for larger screens */
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .bg {
+    width: 110%; /* Make background full width */
+    height: auto; /* Height will adjust automatically */
+  }
+
+  .title {
+    font-size: 50px; /* Adjust font size for larger screens */
+    margin-bottom: 100px; /* Adjust margin for larger screens */
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .bg {
+    width: 110%; /* Full width for the background */
+    height: auto; /* Adjust height automatically */
+  }
+
+  .title {
+    font-size: 30px; /* Smaller font size for the title */
+    margin-bottom: 50px; /* Adjust margin for smaller screens */
+    text-align: center; /* Center align the title */
+  }
+
+  .button1 {
+    width: 80px; /* Adjust button width */
+    height: 40px; /* Adjust button height */
+    font-size: 14px; /* Adjust font size for the button */
+    margin-left: 0; /* Center the button */
+  }
+}
