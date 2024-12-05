@@ -1,0 +1,338 @@
+body {
+  background-color: rgb(236, 239, 238);
+  position: relative;
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("bg-1.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+
+.top-right-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  z-index: 10;
+}
+
+.bottom-left-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  z-index: 10;
+}
+
+.center-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  max-width: 70%;
+  max-height: 80%;
+  object-fit: contain;
+  z-index: 10;
+}
+
+.center-flower {
+  opacity: 80%;
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: auto;
+  height: auto;
+  max-width: 50%;
+  max-height: 50%;
+  object-fit: contain;
+  z-index: 10;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.7em;
+  color: rgb(161, 137, 0);
+  text-align: center;
+  z-index: 15;
+  font-family: "Nunito", serif;
+}
+
+.text-overlay1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  color: rgb(161, 137, 0);
+  text-align: center;
+  z-index: 15;
+  font-family: "Cinzel Decorative", serif;
+}
+
+#playMusicButton {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1em;
+  padding: 0.3em 1em;
+  background-color: rgb(214, 192, 67);
+  color: white;
+  border: none;
+  border-radius: 1em;
+  cursor: pointer;
+  opacity: 1;
+  z-index: 15;
+  font-family: "Nunito", serif;
+}
+
+.assalam-text {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1em;
+  color: rgb(156, 109, 144);
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+.shukri-zubaidah-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  color: rgb(156, 109, 144);
+  text-align: center;
+  min-width: 100%;
+  font-family: "Cinzel", serif;
+}
+
+.invitation-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2em;
+  color: rgb(156, 109, 144);
+  text-align: center;
+  z-index: 15;
+  min-width: 100%;
+  font-family: "Playfair Display", serif;
+}
+
+.naufal-nadhirah-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  color: rgb(156, 109, 144);
+  text-align: center;
+  z-index: 15;
+  min-width: 100%;
+  font-family: "Cinzel", serif;
+}
+
+.tempat {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  border: 2px solid rgb(156, 109, 144);
+  padding: 0.5em;
+
+  color: rgb(156, 109, 144);
+  text-align: center;
+  z-index: 15;
+  min-width: 100%;
+  font-family: "Cinzel Decorative", serif;
+}
+
+.lokasi {
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3em;
+  color: rgb(156, 109, 144);
+  text-align: center;
+  z-index: 15;
+  min-width: 100%;
+  font-family: "Playfair Display", serif;
+}
+
+.hitung {
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3em;
+  color: rgb(156, 109, 144);
+  text-align: center;
+  z-index: 15;
+  min-width: 100%;
+  font-family: "Playfair Display", serif;
+}
+
+#countdown {
+  position: absolute;
+  top: 135%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-family: "Nunito", serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(156, 109, 144); 
+  background-color: rgba(255,255,255,0.911);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.spaceBelow {
+  position: absolute;
+  top: 215%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+.nav-bar {
+  position: fixed;
+  padding: 10px;
+  bottom: 0;
+  left: 50%; 
+  transform: translateX(-50%);
+  display: flex; 
+  gap: 60px; 
+  z-index: 15;
+  background-color: rgb(214, 165, 203);
+  border-radius: 1em;
+}
+
+.nav-button {
+  padding: 0.5em 1em;
+  background-color: rgb(226, 196, 220);
+  color: white;
+  border: none;
+  border-radius: 1em;
+  cursor: pointer;
+  font-family: "Nunito", serif;
+  font-size: 1em;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.8); 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.popup-image {
+  max-width: 80%; 
+  max-height: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 3s ease-in forwards; 
+}
+
+  /*for desktop*/
+@media only screen and (width >= 1280px) {
+  .container {
+    width: 30%;
+  }
+}
+
+  /*for tab*/
+@media only screen and (width >= 600px) and (height >=1000px) {
+
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (width <= 450px) {
+  .assalam-text {
+    font-size: 0.8em;
+  }
+  .shukri-zubaidah-text {
+    font-size: 1em;
+    margin-top: 2em;
+  }
+  .invitation-text {
+    font-size: 1em;
+    margin-top: 4em;
+  }
+  .naufal-nadhirah-text {
+    font-size: 1em;
+    margin-top: 8em;
+  }
+  .tempat {
+    font-size: 1em;
+    margin-top: 10em;
+  }
+  .lokasi {
+    margin-top: 1em;
+    margin-top: 12em;
+  }
+  .hitung {
+    margin-top: 1em;
+    margin-top: 16em;
+  }
+  #countdown {
+    margin-top: 1em;
+    margin-top: 24em;
+    font-size: 1em;
+  }
+}
